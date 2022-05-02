@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MAX14776E)(type Legacy)(uri "/Users/michael/Library/Mobile Documents/com~apple~CloudDocs/Kicad Libs/MAX14776E/MAX14776E.lib")(options "")(descr ""))
+  (lib (name TMF8801-1B)(type Legacy)(uri "/Users/michael/Library/Mobile Documents/com~apple~CloudDocs/Kicad Libs/TMF8801/TMF8801-1B.lib")(options "")(descr ""))
+)

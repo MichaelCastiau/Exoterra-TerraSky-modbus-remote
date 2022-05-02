@@ -1,0 +1,195 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6075 3800 0    50   Output ~ 0
+SDO
+Wire Wire Line
+	3975 3600 3975 3800
+Text Notes 3400 3300 0    50   ~ 0
+A
+Text Notes 3400 3650 0    50   ~ 0
+B
+$Comp
+L power:GND #PWR016
+U 1 1 5FD9F30E
+P 5950 4625
+F 0 "#PWR016" H 5950 4375 50  0001 C CNN
+F 1 "GND" H 5955 4452 50  0000 C CNN
+F 2 "" H 5950 4625 50  0001 C CNN
+F 3 "" H 5950 4625 50  0001 C CNN
+	1    5950 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3800 4550 3500
+Wire Wire Line
+	4550 3125 4550 3400
+Wire Wire Line
+	3625 3125 3625 3400
+Wire Wire Line
+	3625 3500 3625 3800
+Wire Notes Line
+	5200 4275 5175 4275
+Wire Wire Line
+	3975 3800 4550 3800
+$Comp
+L Device:R R6
+U 1 1 5FD5E380
+P 3975 3450
+F 0 "R6" H 4045 3496 50  0000 L CNN
+F 1 "120" H 4045 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3905 3450 50  0001 C CNN
+F 3 "~" H 3975 3450 50  0001 C CNN
+	1    3975 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5FD5B53D
+P 5950 4325
+F 0 "C9" V 6179 4325 50  0000 C CNN
+F 1 "0.1uF" V 6088 4325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5950 4325 50  0001 C CNN
+F 3 "~" H 5950 4325 50  0001 C CNN
+	1    5950 4325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3625 3400 3500 3400
+Wire Wire Line
+	3625 3500 3500 3500
+$Comp
+L MAX14776E:MAX14776EASA+ U3
+U 1 1 5FFE7AC4
+P 6450 3300
+F 0 "U3" H 7778 2903 60  0000 L CNN
+F 1 "MAX14776EASA+" H 7778 2797 60  0000 L CNN
+F 2 "MAX14776E:MAX14776E" H 7250 3640 60  0001 C CNN
+F 3 "" H 6450 3300 60  0000 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 6075 3300 0    50   Input ~ 0
+DE
+Text HLabel 6075 3700 0    50   Input ~ 0
+SDI
+Wire Wire Line
+	6075 3700 6200 3700
+Wire Wire Line
+	6450 3600 6250 3600
+Wire Wire Line
+	6250 3600 6250 3300
+Wire Wire Line
+	6250 3300 6450 3300
+Wire Wire Line
+	6250 3300 6075 3300
+Connection ~ 6250 3300
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5FDA2C3C
+P 5475 3975
+F 0 "#PWR015" H 5475 3825 50  0001 C CNN
+F 1 "+3.3V" H 5490 4148 50  0000 C CNN
+F 2 "" H 5475 3975 50  0001 C CNN
+F 3 "" H 5475 3975 50  0001 C CNN
+	1    5475 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 3975 5475 4100
+Wire Wire Line
+	5475 4100 5950 4100
+Wire Wire Line
+	5950 4100 5950 4225
+Connection ~ 5950 4100
+Wire Wire Line
+	5950 4100 6450 4100
+Wire Wire Line
+	5950 4425 5950 4525
+Wire Wire Line
+	6450 4300 6275 4300
+Wire Wire Line
+	6275 4300 6275 4525
+Wire Wire Line
+	6275 4525 5950 4525
+Connection ~ 5950 4525
+Wire Wire Line
+	5950 4525 5950 4625
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5FD40E93
+P 6200 3875
+F 0 "TP4" H 6375 3925 50  0000 R CNN
+F 1 "Tx" H 6350 4000 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6400 3875 50  0001 C CNN
+F 3 "~" H 6400 3875 50  0001 C CNN
+	1    6200 3875
+	-1   0    0    1   
+$EndComp
+Connection ~ 6200 3700
+Wire Wire Line
+	6200 3700 6450 3700
+Wire Wire Line
+	6200 3875 6200 3700
+Wire Wire Line
+	6075 3800 6400 3800
+Wire Wire Line
+	6400 3875 6400 3800
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6450 3800
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5FD42BF3
+P 6400 3875
+F 0 "TP5" H 6200 3950 50  0000 L CNN
+F 1 "Rx" H 6250 3875 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6600 3875 50  0001 C CNN
+F 3 "~" H 6600 3875 50  0001 C CNN
+	1    6400 3875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3975 3800 3625 3800
+Connection ~ 3975 3800
+Wire Wire Line
+	4550 3500 6450 3500
+Wire Wire Line
+	4550 3400 6450 3400
+Text GLabel 3500 3400 0    50   Input ~ 0
+RS485_A
+Text GLabel 3500 3500 0    50   Input ~ 0
+RS485_B
+$Comp
+L Connector:TestPoint TP3
+U 1 1 622AB850
+P 6250 3100
+F 0 "TP3" H 6425 3150 50  0000 R CNN
+F 1 "DE" H 6400 3225 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6450 3100 50  0001 C CNN
+F 3 "~" H 6450 3100 50  0001 C CNN
+	1    6250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3100 6250 3300
+Wire Wire Line
+	3625 3125 3975 3125
+Wire Wire Line
+	3975 3300 3975 3125
+Connection ~ 3975 3125
+Wire Wire Line
+	3975 3125 4550 3125
+$EndSCHEMATC

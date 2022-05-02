@@ -1,0 +1,329 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 622A5C03
+P 3050 4425
+AR Path="/622A5C03" Ref="Q?"  Part="1" 
+AR Path="/622A2433/622A5C03" Ref="Q2"  Part="1" 
+F 0 "Q2" H 3254 4471 50  0000 L CNN
+F 1 "2N7002" H 3254 4380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 4350 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3050 4425 50  0001 L CNN
+	1    3050 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 622A6097
+P 3150 3400
+F 0 "D5" V 3189 3282 50  0000 R CNN
+F 1 "Learn (Orange)" V 3098 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3150 3400 50  0001 C CNN
+F 3 "~" H 3150 3400 50  0001 C CNN
+	1    3150 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 3550 3150 3775
+Wire Wire Line
+	3150 4075 3150 4225
+$Comp
+L power:+3.3V #PWR020
+U 1 1 622AB05F
+P 2525 2650
+F 0 "#PWR020" H 2525 2500 50  0001 C CNN
+F 1 "+3.3V" H 2540 2823 50  0000 C CNN
+F 2 "" H 2525 2650 50  0001 C CNN
+F 3 "" H 2525 2650 50  0001 C CNN
+	1    2525 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 622AB844
+P 2525 3425
+F 0 "C12" H 2640 3471 50  0000 L CNN
+F 1 "22uF" H 2640 3380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2563 3275 50  0001 C CNN
+F 3 "~" H 2525 3425 50  0001 C CNN
+	1    2525 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 3575 2525 3725
+$Comp
+L power:GND #PWR021
+U 1 1 622AC671
+P 2525 3725
+F 0 "#PWR021" H 2525 3475 50  0001 C CNN
+F 1 "GND" H 2530 3552 50  0000 C CNN
+F 2 "" H 2525 3725 50  0001 C CNN
+F 3 "" H 2525 3725 50  0001 C CNN
+	1    2525 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 622ACAA0
+P 9150 4900
+F 0 "#PWR022" H 9150 4650 50  0001 C CNN
+F 1 "GND" H 9155 4727 50  0000 C CNN
+F 2 "" H 9150 4900 50  0001 C CNN
+F 3 "" H 9150 4900 50  0001 C CNN
+	1    9150 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 2150 4425 0    50   Input ~ 0
+LED_LEARN
+$Comp
+L Device:R R8
+U 1 1 622A68D3
+P 3150 3925
+F 0 "R8" H 3220 3971 50  0000 L CNN
+F 1 "60R" H 3220 3880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3080 3925 50  0001 C CNN
+F 3 "~" H 3150 3925 50  0001 C CNN
+	1    3150 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 622AD66A
+P 2500 4425
+F 0 "R12" V 2707 4425 50  0000 C CNN
+F 1 "1M" V 2616 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2430 4425 50  0001 C CNN
+F 3 "~" H 2500 4425 50  0001 C CNN
+	1    2500 4425
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 4425 2650 4425
+Wire Wire Line
+	2350 4425 2150 4425
+Wire Wire Line
+	2525 2650 2525 2925
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 622B40B2
+P 5025 4425
+AR Path="/622B40B2" Ref="Q?"  Part="1" 
+AR Path="/622A2433/622B40B2" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5229 4471 50  0000 L CNN
+F 1 "2N7002" H 5229 4380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5225 4350 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5025 4425 50  0001 L CNN
+	1    5025 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 622B40B8
+P 5125 3400
+F 0 "D6" V 5164 3282 50  0000 R CNN
+F 1 "Day (yellow)" V 5073 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5125 3400 50  0001 C CNN
+F 3 "~" H 5125 3400 50  0001 C CNN
+	1    5125 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5125 3550 5125 3775
+Wire Wire Line
+	5125 4075 5125 4225
+Text HLabel 4125 4425 0    50   Input ~ 0
+LED_DAY
+$Comp
+L Device:R R13
+U 1 1 622B40CE
+P 4475 4425
+F 0 "R13" V 4682 4425 50  0000 C CNN
+F 1 "1M" V 4591 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4405 4425 50  0001 C CNN
+F 3 "~" H 4475 4425 50  0001 C CNN
+	1    4475 4425
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4825 4425 4625 4425
+Wire Wire Line
+	4325 4425 4125 4425
+$Comp
+L Device:LED D7
+U 1 1 622B9227
+P 7125 3400
+F 0 "D7" V 7164 3282 50  0000 R CNN
+F 1 "Night (yellow)" V 7073 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7125 3400 50  0001 C CNN
+F 3 "~" H 7125 3400 50  0001 C CNN
+	1    7125 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7125 3550 7125 3775
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 622BE103
+P 9050 4425
+AR Path="/622BE103" Ref="Q?"  Part="1" 
+AR Path="/622A2433/622BE103" Ref="Q5"  Part="1" 
+F 0 "Q5" H 9254 4471 50  0000 L CNN
+F 1 "2N7002" H 9254 4380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9250 4350 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9050 4425 50  0001 L CNN
+	1    9050 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 622BE109
+P 9150 3400
+F 0 "D8" V 9189 3282 50  0000 R CNN
+F 1 " Twilight (yellow)" V 9098 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9150 3400 50  0001 C CNN
+F 3 "~" H 9150 3400 50  0001 C CNN
+	1    9150 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 3550 9150 3775
+Wire Wire Line
+	9150 4075 9150 4225
+Wire Wire Line
+	9150 4900 9150 4775
+Text HLabel 8150 4425 0    50   Input ~ 0
+LED_NIGHT
+$Comp
+L Device:R R15
+U 1 1 622BE11F
+P 8500 4425
+F 0 "R15" V 8707 4425 50  0000 C CNN
+F 1 "1M" V 8616 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8430 4425 50  0001 C CNN
+F 3 "~" H 8500 4425 50  0001 C CNN
+	1    8500 4425
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8850 4425 8650 4425
+Wire Wire Line
+	8350 4425 8150 4425
+Connection ~ 5125 4775
+Wire Wire Line
+	5125 4775 5125 4625
+Wire Wire Line
+	5125 4775 3150 4775
+Wire Wire Line
+	3150 4775 3150 4625
+Wire Wire Line
+	6325 4425 6125 4425
+Wire Wire Line
+	6825 4425 6625 4425
+$Comp
+L Device:R R14
+U 1 1 622B923D
+P 6475 4425
+F 0 "R14" V 6682 4425 50  0000 C CNN
+F 1 "1M" V 6591 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6405 4425 50  0001 C CNN
+F 3 "~" H 6475 4425 50  0001 C CNN
+	1    6475 4425
+	0    1    -1   0   
+$EndComp
+Text HLabel 6125 4425 0    50   Input ~ 0
+LED_TWILIGHT
+Wire Wire Line
+	7125 4075 7125 4225
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 622B9221
+P 7025 4425
+AR Path="/622B9221" Ref="Q?"  Part="1" 
+AR Path="/622A2433/622B9221" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7229 4471 50  0000 L CNN
+F 1 "2N7002" H 7229 4380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7225 4350 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7025 4425 50  0001 L CNN
+	1    7025 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4775 7125 4775
+Wire Wire Line
+	7125 4625 7125 4775
+Connection ~ 7125 4775
+Wire Wire Line
+	7125 4775 9150 4775
+Wire Wire Line
+	9150 4625 9150 4775
+Connection ~ 9150 4775
+Wire Wire Line
+	3150 2925 5125 2925
+Connection ~ 3150 2925
+Wire Wire Line
+	3150 2925 3150 3250
+Connection ~ 5125 2925
+Wire Wire Line
+	5125 2925 5125 3250
+Wire Wire Line
+	5125 2925 7125 2925
+Connection ~ 7125 2925
+Wire Wire Line
+	7125 2925 7125 3250
+Wire Wire Line
+	7125 2925 9150 2925
+Wire Wire Line
+	9150 2925 9150 3250
+Wire Wire Line
+	2525 2925 3150 2925
+Wire Wire Line
+	2525 2925 2525 3275
+Connection ~ 2525 2925
+$Comp
+L Device:R R9
+U 1 1 623654A9
+P 5125 3925
+F 0 "R9" H 5195 3971 50  0000 L CNN
+F 1 "60R" H 5195 3880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5055 3925 50  0001 C CNN
+F 3 "~" H 5125 3925 50  0001 C CNN
+	1    5125 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6236591A
+P 7125 3925
+F 0 "R10" H 7195 3971 50  0000 L CNN
+F 1 "60R" H 7195 3880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7055 3925 50  0001 C CNN
+F 3 "~" H 7125 3925 50  0001 C CNN
+	1    7125 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 62365F63
+P 9150 3925
+F 0 "R11" H 9220 3971 50  0000 L CNN
+F 1 "60R" H 9220 3880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 3925 50  0001 C CNN
+F 3 "~" H 9150 3925 50  0001 C CNN
+	1    9150 3925
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,261 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LM2594HVM-3.3 U4
+U 1 1 6224290D
+P 5400 3500
+F 0 "U4" H 5400 3867 50  0000 C CNN
+F 1 "LM2594HVM-3.3" H 5400 3776 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 3250 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 5400 3600 50  0001 C CNN
+	1    5400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3400 4075 3400
+$Comp
+L power:+24V #PWR017
+U 1 1 6223A400
+P 4075 3000
+F 0 "#PWR017" H 4075 2850 50  0001 C CNN
+F 1 "+24V" H 4090 3173 50  0000 C CNN
+F 2 "" H 4075 3000 50  0001 C CNN
+F 3 "" H 4075 3000 50  0001 C CNN
+	1    4075 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4075 3400
+Wire Wire Line
+	4075 4075 4075 4325
+$Comp
+L power:GND #PWR019
+U 1 1 6223B3F8
+P 7925 4700
+F 0 "#PWR019" H 7925 4450 50  0001 C CNN
+F 1 "GND" H 7930 4527 50  0000 C CNN
+F 2 "" H 7925 4700 50  0001 C CNN
+F 3 "" H 7925 4700 50  0001 C CNN
+	1    7925 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 6223C2A0
+P 4075 3925
+F 0 "C10" H 4193 3971 50  0000 L CNN
+F 1 "68uF" H 4193 3880 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 4113 3775 50  0001 C CNN
+F 3 "~" H 4075 3925 50  0001 C CNN
+	1    4075 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 3400 4075 3775
+Wire Wire Line
+	5000 3500 4625 3500
+Wire Wire Line
+	4625 3500 4625 4325
+Wire Wire Line
+	4625 4325 4075 4325
+Wire Wire Line
+	5600 3800 5600 4325
+Wire Wire Line
+	5600 4325 4625 4325
+Connection ~ 4625 4325
+$Comp
+L Diode:1N5817 D3
+U 1 1 6223DC12
+P 6200 3925
+F 0 "D3" V 6154 4005 50  0000 L CNN
+F 1 "1N5817" V 6245 4005 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 6200 3750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6200 3925 50  0001 C CNN
+	1    6200 3925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3500 6200 3500
+Wire Wire Line
+	6200 3500 6200 3775
+Wire Wire Line
+	6200 4075 6200 4325
+Wire Wire Line
+	6200 4325 5600 4325
+Connection ~ 5600 4325
+$Comp
+L Device:L L1
+U 1 1 6223EFA3
+P 6575 3500
+F 0 "L1" V 6400 3500 50  0000 C CNN
+F 1 "100uH" V 6500 3500 50  0000 C CNN
+F 2 "Inductor_SMD:L_1812_4532Metric" H 6575 3500 50  0001 C CNN
+F 3 "~" H 6575 3500 50  0001 C CNN
+	1    6575 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6425 3500 6200 3500
+Connection ~ 6200 3500
+Wire Wire Line
+	6725 3500 6925 3500
+Wire Wire Line
+	6925 3500 6925 3400
+Wire Wire Line
+	6925 3400 5800 3400
+$Comp
+L Device:CP C11
+U 1 1 6223FE48
+P 6925 3925
+F 0 "C11" H 7043 3971 50  0000 L CNN
+F 1 "120uF" H 7043 3880 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6963 3775 50  0001 C CNN
+F 3 "~" H 6925 3925 50  0001 C CNN
+	1    6925 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 4075 6925 4325
+Wire Wire Line
+	6925 4325 6200 4325
+Connection ~ 6200 4325
+Wire Wire Line
+	6925 3775 6925 3500
+Connection ~ 6925 3500
+Wire Wire Line
+	7925 3500 7925 3275
+$Comp
+L power:+3.3V #PWR018
+U 1 1 622410DB
+P 7925 3000
+F 0 "#PWR018" H 7925 2850 50  0001 C CNN
+F 1 "+3.3V" H 7940 3173 50  0000 C CNN
+F 2 "" H 7925 3000 50  0001 C CNN
+F 3 "" H 7925 3000 50  0001 C CNN
+	1    7925 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6925 4325
+NoConn ~ 5200 3800
+NoConn ~ 5300 3800
+NoConn ~ 5400 3800
+$Comp
+L Device:LED D?
+U 1 1 6225FD78
+P 7500 4050
+AR Path="/6225FD78" Ref="D?"  Part="1" 
+AR Path="/622422B2/6225FD78" Ref="D4"  Part="1" 
+F 0 "D4" V 7539 3932 50  0000 R CNN
+F 1 "Power On (Green)" V 7448 3932 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7500 4050 50  0001 C CNN
+F 3 "~" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6225FD7E
+P 7500 3725
+AR Path="/6225FD7E" Ref="R?"  Part="1" 
+AR Path="/622422B2/6225FD7E" Ref="R7"  Part="1" 
+F 0 "R7" H 7559 3771 50  0000 L CNN
+F 1 "60R" H 7559 3680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7500 3725 50  0001 C CNN
+F 3 "~" H 7500 3725 50  0001 C CNN
+	1    7500 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3825 7500 3900
+Wire Wire Line
+	7500 3500 7500 3625
+Wire Wire Line
+	6925 3500 7500 3500
+Wire Wire Line
+	7500 3500 7925 3500
+Connection ~ 7500 3500
+Wire Wire Line
+	7500 4200 7500 4325
+Wire Wire Line
+	6925 4325 7500 4325
+Wire Wire Line
+	7500 4325 7925 4325
+Connection ~ 7500 4325
+Wire Wire Line
+	7925 4325 7925 4700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622A62EF
+P 8125 3275
+AR Path="/62205316/622A62EF" Ref="TP?"  Part="1" 
+AR Path="/622422B2/622A62EF" Ref="TP6"  Part="1" 
+F 0 "TP6" H 8300 3325 50  0000 R CNN
+F 1 "3.3V" H 8375 3425 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8325 3275 50  0001 C CNN
+F 3 "~" H 8325 3275 50  0001 C CNN
+	1    8125 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8125 3275 7925 3275
+Connection ~ 7925 3275
+Wire Wire Line
+	7925 3275 7925 3125
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 623559B1
+P 3875 3400
+F 0 "#FLG02" H 3875 3475 50  0001 C CNN
+F 1 "PWR_FLAG" V 3875 3527 50  0000 L CNN
+F 2 "" H 3875 3400 50  0001 C CNN
+F 3 "~" H 3875 3400 50  0001 C CNN
+	1    3875 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 62356493
+P 8150 3125
+F 0 "#FLG01" H 8150 3200 50  0001 C CNN
+F 1 "PWR_FLAG" V 8150 3253 50  0000 L CNN
+F 2 "" H 8150 3125 50  0001 C CNN
+F 3 "~" H 8150 3125 50  0001 C CNN
+	1    8150 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 62356DB9
+P 8150 4325
+F 0 "#FLG03" H 8150 4400 50  0001 C CNN
+F 1 "PWR_FLAG" V 8150 4453 50  0000 L CNN
+F 2 "" H 8150 4325 50  0001 C CNN
+F 3 "~" H 8150 4325 50  0001 C CNN
+	1    8150 4325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 4325 7925 4325
+Connection ~ 7925 4325
+Wire Wire Line
+	7925 3125 8150 3125
+Connection ~ 7925 3125
+Wire Wire Line
+	7925 3125 7925 3000
+Wire Wire Line
+	3875 3400 4075 3400
+Wire Wire Line
+	4075 3000 4075 3400
+$EndSCHEMATC
